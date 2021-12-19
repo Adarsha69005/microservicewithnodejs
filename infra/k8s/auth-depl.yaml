@@ -12,9 +12,9 @@ spec:
       labels:
         app: auth
     spec:
-    containers:
-      - name: auth
-        image: adarsha69005/auth
+      containers:
+        - name: auth
+          image: adarsha69005/auth
 ---
 apiVersion: v1
 kind: Service
@@ -24,7 +24,7 @@ spec:
   selector:
     app: auth
   ports:
-    -name: auth
-    protocol: TCP
-    port: 3000
-    targetPort: 3000
+    - name: auth
+      protocol: TCP
+      port: 3000
+      targetPort: 3000
